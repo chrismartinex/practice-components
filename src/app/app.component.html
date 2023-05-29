@@ -1,7 +1,22 @@
-
+<!-- 
 
 <h1>Practicing Components</h1>
 <hr>
 <app-warning></app-warning>
 <hr>
-<app-success></app-success>
+<app-success></app-success> -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <label>Username</label>
+            <input type="text" class="form-control" [(ngModel)]="username">
+            <p>{{ username }}</p>
+            <button 
+            class="btn btn-primary" 
+            [disabled]="username == '' "
+            (click)="username = ''">Reset User</button>
+        </div>
+    </div>
+</div>
+
